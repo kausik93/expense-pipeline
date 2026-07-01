@@ -1,0 +1,34 @@
+# Maps a downloaded statement file to its friendly account name.
+# `match` is a case-insensitive substring tested against the file NAME (not its
+# contents). First match wins, so list more specific patterns first.
+#
+# A new card with a known export format will parse fine but land here as an
+# unresolved account until you add a line for it.
+#
+# The values below are generic examples that line up with the files in
+# sample_data/. Replace them with your own accounts.
+accounts:
+  - match: "Chase1111"
+    name: "Chase Travel Rewards"
+  - match: "Chase2222"
+    name: "Chase Cash Rewards"
+  - match: "Chase3333"
+    name: "Chase Airline Card"
+  - match: "Chase4444"
+    name: "Chase Hotel Card"
+  - match: "Chase5555"
+    name: "Chase Combined Cards"
+  - match: "Chase0000"
+    name: "Chase Checking"
+  - match: "Chase9999"
+    name: "Chase Savings"
+  - match: "capital_one"
+    name: "Capital One Venture"
+  # Citi exports carry NO card identifier in the filename ("Year to date") or
+  # the file contents. With a single Citi card this match is fine; if you add
+  # another Citi card, rename each download to disambiguate and add a line per
+  # card -- there is no other way to tell two Citi files apart.
+  - match: "citi"
+    name: "Citi Rewards"
+  - match: "Venmo"
+    name: "Venmo"

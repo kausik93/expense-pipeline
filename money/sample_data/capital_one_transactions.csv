@@ -1,0 +1,6 @@
+Transaction Date,Posted Date,Card No.,Description,Category,Debit,Credit
+
+04/02/2026,04/03/2026,1234,COSTCO WHSE #11,Merchandise,145.67,
+04/08/2026,04/09/2026,1234,LYFT *RIDE FRI,Other Travel,18.40,
+04/19/2026,04/20/2026,1234,CAPITAL ONE PAYMENT,Payment/Credit,,300.00
+04/21/2026,04/22/2026,1234,GITHUB INC,Internet,9.00,

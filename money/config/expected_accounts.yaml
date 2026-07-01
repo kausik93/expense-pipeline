@@ -1,0 +1,43 @@
+# Expected-accounts registry for the pre-flight completeness check (run.py).
+#
+# WHY: the reconciliation guard only proves nothing was dropped *between*
+# parsing and categorizing -- it cannot tell that a whole statement never made
+# it into the inbox. This list is the "what should be here", so a forgotten card
+# is caught loudly instead of silently understating the month.
+#
+# A card is only *expected* for months within [opened, closed]. Dates are YYYY-MM
+# (month granularity); omit `closed` while the card is still open. `name` must
+# match the account name that accounts.yaml produces, or the check can't see it
+# as present.
+#
+# The entries below are generic examples that match accounts.yaml. Replace them
+# with your own accounts and their open/close dates.
+accounts:
+  # --- bank accounts ---
+  - name: Chase Checking
+    opened: 2018-01
+  - name: Chase Savings
+    opened: 2018-01
+
+  # --- open credit cards ---
+  - name: Capital One Venture
+    opened: 2023-01
+  - name: Chase Travel Rewards
+    opened: 2020-01
+  - name: Chase Cash Rewards
+    opened: 2019-06
+  - name: Chase Airline Card
+    opened: 2023-12
+  - name: Chase Hotel Card
+    opened: 2025-04
+  - name: Citi Rewards
+    opened: 2026-01
+
+  # --- payments app ---
+  - name: Venmo
+    opened: 2018-01
+
+  # --- example of a closed card (kept so back-month runs still check correctly) ---
+  - name: Old Store Card
+    opened: 2019-01
+    closed: 2022-06

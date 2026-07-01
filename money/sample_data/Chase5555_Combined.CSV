@@ -1,0 +1,4 @@
+Card,Transaction Date,Post Date,Description,Category,Type,Amount,Memo
+
+1111,04/14/2026,04/15/2026,SHELL OIL 575,Gas,Sale,-48.20,
+2222,04/16/2026,04/17/2026,DOORDASH*BURGER,Food & Drink,Sale,-29.80,

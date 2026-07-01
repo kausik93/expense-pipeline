@@ -1,0 +1,6 @@
+pandas>=2.0
+openpyxl>=3.1
+PyYAML>=6.0
+# Google Sheets upload (optional: only needed with --upload)
+google-api-python-client>=2.0
+google-auth-oauthlib>=1.0

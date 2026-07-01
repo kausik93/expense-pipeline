@@ -1,0 +1,6 @@
+Account Statement,,,,,,
+,,,,,,
+ID,Datetime,Type,From,To,Note,Amount (total)
+
+1001234567,2026-04-10 12:00:00,Payment,Jane Doe,Alice Smith,dinner,- $42.00
+1001234568,2026-04-15 09:30:00,Charge,Jane Doe,Bob Jones,rent split,$500.00

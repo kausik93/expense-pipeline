@@ -1,0 +1,21 @@
+# Canonical spending categories. Every transaction must resolve to exactly one
+# of these. The interactive categorizer and merchants.yaml may only use values
+# from this list. Order here is the order used in the breakdown block.
+- Income
+- Investments
+- Rent
+- Utilities
+- Food & Dining
+- Groceries
+- Coffee
+- Alcohol
+- Health
+- Haircut
+- Shopping
+- Entertainment
+- Travel
+- Transport
+- Productivity Tooling
+- Work
+- Misc.
+- Payments

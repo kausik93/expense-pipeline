@@ -1,0 +1,9 @@
+# Google Sheets upload target. Used by `python money/pipeline/run.py --upload`.
+#
+# Replace the placeholder with your own spreadsheet's ID (the long string in its
+# URL: https://docs.google.com/spreadsheets/d/<THIS_PART>/edit). Override at the
+# command line with --spreadsheet-id if you prefer not to commit it.
+spreadsheet_id: "YOUR_SPREADSHEET_ID"
+# Tab whose formatting is duplicated for each new month (fonts, bold headers,
+# SUMIF rows, etc.). Any existing monthly tab laid out this way will do.
+template_tab: "TemplateMonth"
